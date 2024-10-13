@@ -33,11 +33,11 @@
     }
 
     .header__logo-text{        
-        font-size: 24px;
+        display: none;
     }
 
     .main__welcome{
-        font-size: 24px;
+        font-size: 26px;
         margin: 0;
     }
 
@@ -47,7 +47,7 @@
     }
 
     .main__options-title{
-        font-size: 24px;
+        font-size: 26px;
     }
 
     .main__options-descr{
