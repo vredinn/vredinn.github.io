@@ -24,6 +24,14 @@
     padding: 20px 0px;
 }
 
+.title {
+    font-family: 'Lobster';
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    color: rgb(255, 167, 192);
+}
+
 .header{
     position: relative;
     width: 100%;
@@ -46,23 +54,6 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-}
-
-.d32:before, 
-.d32:after {
-    content: "";
-    height: 80px; 
-    width: 80px;
-    background: inherit;
-    position: absolute; 
-    top: 0; 
-    left: 0;
-}
-.d32:before {
-    transform: rotate(30deg);
-}
-.d32:after {
-    transform: rotate(60deg);
 }
 
 .header__logo-img{
@@ -118,13 +109,11 @@
     background: rgb(242, 232, 242);
     color: rgb(255, 157, 184);
     border-style: none;
-    width: 321px;
-    height: 61px;
+    padding: 20px 30px;
     font-family: Inter;
     font-size: 24px;
     font-weight: 500;
-    line-height: 29px;
-    letter-spacing: 0px;
+    line-height: normal;
     text-align: center;
     transition: transform .5s;
 }
@@ -137,10 +126,9 @@
     color: rgb(255, 255, 255);
     font-size: 18px;
     line-height: 22px;
-    width: 125px;
-    height: 49px;
     border-radius: 14px;
     background: rgb(255, 157, 184);
+    padding: 12px 20px;
 }
 
 .button_contrast:hover{    
@@ -163,24 +151,21 @@
     font-family: Lobster;
     font-size: 48px;
     font-weight: 400;
-    line-height: 60px;
-    letter-spacing: 0px;
+    line-height: normal;
     text-align: center;
-}
-
-.main__divider{
-    margin: auto 0;
 }
 
 .main__logo{
     filter: brightness(0) invert(1) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     max-height: 186px;
+    margin-top: auto;
 }
 
 .main__options{
     display: flex;
     align-items:start;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .main__options-item{
@@ -202,7 +187,7 @@
     font-family: Lobster;
     font-size: 64px;
     font-weight: 400;
-    line-height: 60px;
+    line-height: normal;
     text-align: center;
 }
 

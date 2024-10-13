@@ -7,13 +7,6 @@
     background: rgb(255, 255, 255);
     
 }
-.title {
-    font-family: 'Lobster';
-    text-align: center;
-    font-size: 48px;
-    font-weight: 400;
-    color: rgb(255, 167, 192);
-}
 .wrapper {
     width: 100%;
     position: relative;
