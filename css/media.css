@@ -20,8 +20,12 @@
         top: 5px;
     }
 
+    .header__logo-text{        
+        font-size: 24px;
+    }
+
     .main__welcome{
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .main__options{
@@ -30,19 +34,19 @@
     }
 
     .main__options-title{
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .main__options-descr{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .title{
-        font-size: 36px;
+        font-size: 24px;
     }
 
     .button{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .wrapper .carousel {
