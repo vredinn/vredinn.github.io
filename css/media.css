@@ -10,6 +10,7 @@
     
     .container{
         max-width: 900px;
+        padding: 20px 10px;
     }
 
     .header__menu{
@@ -36,13 +37,13 @@
         display: none;
     }
 
-    .main__logo{
-        max-height: 100px;
-    }
-
     .main__welcome{
         font-size: 26px;
         margin: 0;
+    }
+
+    .main__logo{
+        transform: scaleY(0);
     }
 
     .main__options{
@@ -59,11 +60,11 @@
     }
 
     .title{
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .button{
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .wrapper .carousel {
@@ -73,4 +74,14 @@
     .wrapper i{
         display: none;
     }
+
+    .questions__list-item{
+        padding: 10px;
+    }
+
+    .questions__list-title{        
+        font-size: 18px;
+    }
+
+
 }

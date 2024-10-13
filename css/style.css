@@ -5,7 +5,18 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    width: 100%;
+    height: inherit;
+}
+
+.container_flex-margin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.container_fullheight{
+    min-height: 100vh;
 }
 
 .box-shadow{    
@@ -16,20 +27,16 @@
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.container_flex-margin{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
-}
-
 .title {
     font-family: 'Lobster';
     text-align: center;
     font-size: 48px;
     font-weight: 400;
     color: rgb(255, 167, 192);
+}
+
+.title_margin{
+    margin-top: 30px;
 }
 
 .header{
@@ -199,4 +206,71 @@
     font-weight: 500;
     line-height:normal;
     text-align: center;
+}
+
+.questions__list{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    list-style-type: none;
+}
+
+.questions__list-item{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    display: block;
+    border-radius: 10px;
+    background: rgb(242, 232, 242);
+    border: solid white 5px; 
+}
+
+.questions__list-title{
+    font-size: 22px;
+    cursor: pointer;
+    transition: margin 150ms ease-out, color .25s;
+}
+
+.questions__list-title::-webkit-details-marker{
+    display:none;
+}
+.questions__list-title::-moz-list-bullet{
+    list-style-type:none;
+}
+.questions__list-title::marker{
+    display:none;
+}
+
+.questions__list-title:hover{    
+    color: rgb(255, 157, 184);
+}
+
+.questions__list-item[open] > .questions__list-title::marker {
+    color: rgb(255, 157, 184);
+}
+  
+.questions__list-item[open] .questions__list-title {
+    margin-bottom: 15px;
+    color: rgb(255, 157, 184);
+}
+
+.questions__list-descr{
+    font-size: 18px;
+}
+
+.questions__list-expand{
+    font-size: 50px;
+    line-height: 10px;
+    position: absolute;
+    right: 20px;
+    bottom: 50%;
+    transform: translate(0, 10%);
+}
+
+.questions__list-item:nth-child(even){    
+    background: #A8D4E6;
 }

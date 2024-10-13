@@ -1,12 +1,4 @@
 
-.examples {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background: rgb(255, 255, 255);
-    
-}
 .wrapper {
     width: 100%;
     position: relative;
@@ -35,8 +27,8 @@
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
     gap: 16px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
     scroll-behavior: smooth;
     scrollbar-width: 0;
     padding:25px 0;
@@ -68,6 +60,7 @@
     user-select: none;
 }
 .carousel .card {
+    height: 500px;
     scroll-snap-align: center;
     padding: 10px;
     list-style: none;
@@ -79,7 +72,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: solid white 5px;   
+    border: solid white 5px;
 }
 .card__img {
     position: relative;
@@ -123,19 +116,9 @@ transform: rotate(60deg);
 .card h2 {
     font-weight: 500;
     font-size: 1.56rem;
-    margin: 30px 0 5px;
+    margin: 60px 0 5px;
     color: rgb(255, 255, 255);
 }
 .card span {
     color: rgb(255, 255, 255);
-}
-@media screen and (max-width: 900px){
-    .wrapper .carousel {
-        grid-auto-columns: calc((100% / 2) - 9px);
-    }
-}
-@media screen and (max-width: 600px){
-    .wrapper .carousel {
-        grid-auto-columns: 100%;
-    }
 }
