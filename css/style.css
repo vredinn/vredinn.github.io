@@ -139,7 +139,9 @@
 }
 
 .main{
-    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(../img/main.png) center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(../img/main.png);
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
     height: calc(100vh - 60px);
 }
