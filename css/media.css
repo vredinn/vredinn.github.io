@@ -36,6 +36,10 @@
         display: none;
     }
 
+    .main__logo{
+        max-height: 100px;
+    }
+
     .main__welcome{
         font-size: 26px;
         margin: 0;
