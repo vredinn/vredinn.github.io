@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мастерская тортов</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href = "css/style2.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -20,41 +23,99 @@
         <div class="header__item">
             <nav class="header__menu">
                 <a href="#main" class="header__menu-link">ГЛАВНАЯ</a>
-                <a href="#" class="header__menu-link">ПРИМЕРЫ</a>
+                <a href="#examples" class="header__menu-link">ПРИМЕРЫ</a>
                 <a href="#" class="header__menu-link">ОТЗЫВЫ</a>
                 <a href="#" class="header__menu-link">О НАС</a>
             </nav>
         </div>
         <div class="header__item">
-            <button class="button button_contrast button_header">
+            <button class="button button_contrast button_header box-shadow">
             ЗАКАЗАТЬ
         </button>
         </div>
     </header>      
     <section id="main" class="main">
-        <div class="container container_main">
-            <p class="main__welcome">Добро пожаловать в мир сладких шедевров! <br> Мы создаём торты, которые станут украшением любого праздника</p>
+        <div class="container container_flex-margin">
+            <p class="main__welcome text-shadow">Добро пожаловать в мир сладких шедевров! <br> Мы создаём торты, которые станут украшением любого праздника</p>
             <div class="main__divider"></div>
             <img src="img/logo.png" alt="" class="main__logo">
             <div class="main__options">
                 <div class="main__options-item">
-                    <p class="main__options-title">1000+</p>
-                    <p class="main__options-descr">довольных клиентов</p>
+                    <p class="main__options-title text-shadow">1000+</p>
+                    <p class="main__options-descr text-shadow">довольных <br> клиентов</p>  
                 </div>
                 <div class="main__options-item">
-                    <p class="main__options-title">5 лет</p>
-                    <p class="main__options-descr">опыта в кондитерстве</p>
+                    <p class="main__options-title text-shadow">5 лет</p>
+                    <p class="main__options-descr text-shadow">опыта в кондитерстве</p>
                 </div>
                 <div class="main__options-item">
-                    <p class="main__options-title">Лучшие</p>
-                    <p class="main__options-descr">ингридиенты и качество</p>
+                    <p class="main__options-title text-shadow">Лучшие</p>
+                    <p class="main__options-descr text-shadow">ингридиенты и качество</p>  
                 </div>
             </div>
-            <button class="button button_main">
+            <button class="button box-shadow">
                 Узнать подробнее
             </button>
         </div>
     </section>
-    <section>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro odio accusamus voluptates tempore rerum officia saepe assumenda quis quam dolorum adipisci maxime voluptas ullam harum excepturi sequi molestiae, obcaecati aliquid!</section>
+    <section id="examples" class="examples">
+        <div class="container container_flex-margin">
+            <p class="title text-shadow">Примеры наших работ</p>
+            <div class="wrapper">
+                <i id = "left" class="fa-solid fa-angle-left box-shadow"></i>
+                <ul class="carousel">
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/svad.jpg" alt="img" draggable="false"></div>
+                        <h2>Свадебный тор</h2>
+                        <span>1000 руб</span>
+                    </li>
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/svad2.jpg" alt="img" draggable="false"></div>
+                        <h2>Свадебный тор</h2>
+                        <span>1500 руб</span>
+                    </li>
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/svad3.jpg" alt="img" draggable="false"></div>
+                        <h2>Свадебный тор</h2>
+                        <span>2000 руб</span>
+                    </li>
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/svad4.jpg" alt="img" draggable="false"></div>
+                        <h2>Свадебный тор</h2>
+                        <span>2500 руб</span>
+                    </li>
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/dr.jpg" alt="img" draggable="false"></div>
+                        <h2>Торт на 8 марта</h2>
+                        <span>1000 руб</span>
+                    </li>
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/dr2.jpg" alt="img" draggable="false"></div>
+                        <h2>Торт на 8 марта</h2>
+                        <span>1500 руб</span>
+                    </li>
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/dr3.jpg" alt="img" draggable="false"></div>
+                        <h2>Торт на 8 марта</h2>
+                        <span>2000 руб</span>
+                    </li>
+                    <li class="card box-shadow">
+                        <div class="card__img"><img src="./img/images/dr4.jpg" alt="img" draggable="false"></div>
+                        <h2>Торт на 8 марта</h2>
+                        <span>2500 руб</span>
+                    </li>
+                </ul>
+                <i id = "right" class="fa-solid fa-angle-right box-shadow"></i>
+            </div>        
+            <button class="button button_main box-shadow">
+                Посмотреть все
+            </button>
+        </div>
+    </section>
+    <section class="questions" id="questions">
+        <div class="container container_flex-margin">
+
+        </div>
+    </section>
 </body>
 </html>

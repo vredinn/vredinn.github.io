@@ -1,0 +1,148 @@
+
+.examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255, 255, 255);
+    
+}
+.title {
+    font-family: 'Lobster';
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    color: rgb(255, 167, 192);
+}
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+}
+.wrapper i:first-child {
+    left: -22px;
+}
+.wrapper i:last-child {
+    right: -22px;
+}
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+    padding:25px 0;
+}
+
+.carousel .card:nth-child(even){
+    background: #A8D4E6;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel :where(.card, .img) {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+.carousel.no-transition {
+    scroll-behavior: auto;
+
+}
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+.carousel .card {
+    scroll-snap-align: center;
+    padding: 10px;
+    list-style: none;
+    background: rgb(255, 206, 219);
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid white 5px;   
+}
+.card__img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    height: 200px;
+    width: 200px; 
+    align-items: center;
+    background: #ffffff; 
+    border-radius: 8px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.card__img:before, 
+.card__img:after {
+content: "";
+position: absolute; 
+top: 0; 
+left: 0;
+width: 200px; 
+height: 200px; 
+background: inherit;
+border-radius: 8px;
+}
+.card__img:before {
+transform: rotate(30deg);
+}
+.card__img:after {
+transform: rotate(60deg);
+}
+
+.card__img img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid rgb(255, 157, 184);
+    z-index: 1;
+}
+.card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+    color: rgb(255, 255, 255);
+}
+.card span {
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 900px){
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+@media screen and (max-width: 600px){
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
