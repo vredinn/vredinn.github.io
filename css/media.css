@@ -1,5 +1,13 @@
 @media screen and (max-width: 900px){
 
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+}
+@media screen and (max-width: 600px){
+
+    
     .container{
         max-width: 900px;
     }
@@ -13,11 +21,15 @@
     }
 
     .header__logo{
-        display: flex;
         justify-content: center;
         position: absolute;
-        width: 100%;
         top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header__logo-img{
+        margin: 0;
     }
 
     .header__logo-text{        
@@ -26,6 +38,7 @@
 
     .main__welcome{
         font-size: 24px;
+        margin: 0;
     }
 
     .main__options{
@@ -50,16 +63,10 @@
     }
 
     .wrapper .carousel {
-        grid-auto-columns: calc((100% / 2) - 9px);
+        grid-auto-columns: 100%;
     }
 
     .wrapper i{
         display: none;
-    }
-
-}
-@media screen and (max-width: 600px){
-    .wrapper .carousel {
-        grid-auto-columns: 100%;
     }
 }
