@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мастерская тортов</title>
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href = "css/media.css">
@@ -15,18 +14,18 @@
 </head>
 <body>
     <header class="header">
-        <a href="#main" class="header__logo">                
-            <img src="img/logo.png" alt="" class="header__logo-img">
-            <div class="header__logo-text">Мастерская тортов</div>
+        <a href="#main" class="logo">                
+            <img src="img/logo.png" alt="" class="logo-img">
+            <div class="logo-text">Мастерская тортов</div>
         </a>
-        <nav class="header__menu">
-            <a href="#main" class="header__menu-link">ГЛАВНАЯ</a>
-            <a href="#examples" class="header__menu-link">ПРИМЕРЫ</a>
-            <a href="#questions" class="header__menu-link">ВОПРОСЫ</a>
-            <a href="#feedback" class="header__menu-link">ОТЗЫВЫ</a>
-            <a href="#about" class="header__menu-link">О НАС</a>
+        <nav class="menu menu_center">
+            <a href="#main" class="menu__link menu__link_vol">ГЛАВНАЯ</a>
+            <a href="#examples" class="menu__link menu__link_vol">ПРИМЕРЫ</a>
+            <a href="#questions" class="menu__link menu__link_vol">ВОПРОСЫ</a>
+            <a href="#feedback" class="menu__link menu__link_vol">ОТЗЫВЫ</a>
+            <a href="#about" class="menu__link menu__link_vol">О НАС</a>
         </nav>
-        <button class="button button_contrast button_header box-shadow">
+        <button class="button button_contrast button_header box-shadow button_order">
             ЗАКАЗАТЬ
         </button>
     </header>      
@@ -64,7 +63,7 @@
                 <ul id="slider1" class="slider__area">
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/svad.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Свадебный торт</span>
                         <span class="slider__descr">Нежный торт с кремовой отделкой</span>
@@ -74,7 +73,7 @@
                     </li>
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/svad2.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad2.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Детский торт</span>
                         <span class="slider__descr">Красочный торт с фигурками животных</span>
@@ -84,7 +83,7 @@
                     </li>
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/svad3.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad3.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Тортик на день рождения</span>
                         <span class="slider__descr">С шоколадной глазурью и ягодами</span>
@@ -94,7 +93,7 @@
                     </li>
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/svad4.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad4.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Торт на годовщину</span>
                         <span class="slider__descr">Элегантный торт с розами</span>
@@ -104,7 +103,7 @@
                     </li>
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/dr.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Торт на 8 марта</span>
                         <span class="slider__descr">Легкий торт с цветочным декором</span>
@@ -114,7 +113,7 @@
                     </li>
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/dr2.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr2.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Торт на 8 марта</span>
                         <span class="slider__descr">Торт с ягодами и сливками</span>
@@ -124,7 +123,7 @@
                     </li>
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/dr3.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr3.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Торт на 8 марта</span>
                         <span class="slider__descr">Фруктовый торт с кремом</span>
@@ -134,7 +133,7 @@
                     </li>
                     <li class="slider__card slider__card_padding box-shadow">
                         <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/images/dr4.jpg" alt="img" draggable="false">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr4.jpg" alt="img" draggable="false">
                         </div>
                         <span class="slider__title">Последний тортик</span>
                         <span class="slider__descr">Роскошный шоколадный торт</span>
@@ -144,9 +143,10 @@
                     </li>
                 </ul>                               
                 <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
-            </div>  
-            <button class="button button_main box-shadow">
-                Посмотреть все
+            </div>
+            
+            <button class="button button_order box-shadow">
+                Оставить заявку на заказ
             </button>
         </div>
     </section>
@@ -201,30 +201,24 @@
             </p>
             <div class="slider">
                 <img src="icons/prev.svg" class="slider__button slider__button_prev box-shadow"/>
-                <ul id="slider1" class="slider__area">
+                <ul id="slider1" class="slider__area slider__area_feedback">
                     <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/images/svad.jpg" alt="img" draggable="false"></div>
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review1.jpg" alt="img" draggable="false"></div>
                     </li>
                     <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_feedback"><img class="slider__card-img" src="./img/images/svad2.jpg" alt="img" draggable="false"></div>
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review2.jpg" alt="img" draggable="false"></div>
                     </li>
                     <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/images/svad3.jpg" alt="img" draggable="false"></div>
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review3.jpg" alt="img" draggable="false"></div>
                     </li>
                     <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/images/svad4.jpg" alt="img" draggable="false"></div>
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review4.jpg" alt="img" draggable="false"></div>
                     </li>
                     <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/images/dr.jpg" alt="img" draggable="false"></div>
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review5.jpg" alt="img" draggable="false"></div>
                     </li>
                     <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/images/dr2.jpg" alt="img" draggable="false"></div>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/images/dr3.jpg" alt="img" draggable="false"></div>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/images/dr4.jpg" alt="img" draggable="false"></div>
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review6.jpg" alt="img" draggable="false"></div>
                     </li>
                 </ul>
                 <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
@@ -233,7 +227,7 @@
     </section>
     <section class="about" id="about">
         <div class="container">
-            <h2 class="title title__pink text-shadow">О нас</h2>
+            <h2 class="title title_pink text-shadow">О нас</h2>
             <div class="about__card box-shadow">
                 <div class="about__half">
                     <div class="about__descr">
@@ -251,7 +245,7 @@
                 </div>
                 <div class="about__half">
                     <div class="about__info">
-                        <p class="title title_small text-shadow">Контакты</p>
+                        <p class="title title_pink title_small text-shadow">Контакты</p>
                         <address class="about__contacts">
                             <a class="about__contacts-info" href="tel:+71234567890">Телефон: +7 (123) 456-78-90</a>
                             <a class="about__contacts-info" href="mailto:info@torty-master.ru"> Email: info@torty-master.ru</a>
@@ -261,7 +255,7 @@
                         
                     </div>
                     <div class="about__info">                        
-                        <p class="title title_small text-shadow">Мы в соцсетях</p>
+                        <p class="title title_pink title_small text-shadow">Мы в соцсетях</p>
                         <address class="about__contacts">
                             <a class="about__contacts-info" href="https://wa.me/qr/ZEDTFE36FSR2L1">
                                 <img src="icons/whatsapp.svg" alt="" class="about__contacts-img">
@@ -278,7 +272,41 @@
         </div>
     </section>
     <footer class="footer" id="footer">
-
+        <div class="container container_footer">            
+            <a href="#main" class="logo logo_white">                
+                <img src="img/logo.png" alt="" class="logo-img">
+                <div class="logo-text">Мастерская тортов</div>
+            </a>
+            <a class="about__contacts-info filter-white" href="tel:+71234567890">+7 (123) 456-78-90</a>
+            <a class="about__contacts-info filter-white" href="mailto:info@torty-master.ru">info@torty-master.ru</a>
+            <a class="about__contacts-info filter-white" href="https://wa.me/qr/ZEDTFE36FSR2L1">
+                <img src="icons/whatsapp.svg" alt="" class="about__contacts-img filter-white">
+            </a>
+            <a class="about__contacts-info" href="https://t.me/cakeworkshop">
+                <img src="icons/telegram.svg" alt="" class="about__contacts-img filter-white">
+            </a>
+        </div>
+        <div class="container container_footer">
+            <div class="menu">
+                <a href="#main" class="menu__link menu__link_white">ГЛАВНАЯ</a>
+                <a href="#examples" class="menu__link menu__link_white">ПРИМЕРЫ</a>
+                <a href="#questions" class="menu__link menu__link_white">ВОПРОСЫ</a>
+                <a href="#feedback" class="menu__link menu__link_white">ОТЗЫВЫ</a>
+                <a href="#about" class="menu__link menu__link_white">О НАС</a>
+            </div>
+        </div>        
     </footer>
+    <div class="modal">
+        <div class="modal__form">
+            <h2 class="title">Оставьте заявку</h2>
+            <span class="description">с вами свяжутся в ближайшее время</span>
+            <input class="modal__text-field" type="text" name="name" id="name" placeholder="Имя">
+            <input class="modal__text-field" type="phone" name="phone" id="phone" placeholder="Телефон">
+            <input class="modal__text-field" type="email" name="email" id="email" placeholder="Email">
+            <textarea class="modal__text-field modal__text-field_big" name="" id="" placeholder="Пожелания, дополнительный коментарий"></textarea>
+            <input id="order-submit" class="button button_contrast button_margin-bottom box-shadow" type="submit" value="Оставить заявку">
+            <input id="order-cancel" class="button button_contrast box-shadow"" type="button" value="Отмена">
+        </div>
+    </div>
 </body>
 </html>
