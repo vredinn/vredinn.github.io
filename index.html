@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастерская тортов</title>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href = "css/media.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <script src="js/script.js" defer></script>
+    <script src="js/slider.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#main" class="logo">                
+            <img src="img/logo.png" alt="" class="logo-img">
+            <div class="logo-text">Мастерская тортов</div>
+        </a>
+        <nav class="menu menu_header">
+            <a href="#main" class="menu__link menu__link_vol">ГЛАВНАЯ</a>
+            <a href="#examples" class="menu__link menu__link_vol">ПРИМЕРЫ</a>
+            <a href="#questions" class="menu__link menu__link_vol">ВОПРОСЫ</a>
+            <a href="#feedback" class="menu__link menu__link_vol">ОТЗЫВЫ</a>
+            <a href="#about" class="menu__link menu__link_vol">О НАС</a>
+        </nav>
+        <button class="button button_contrast button_header box-shadow button_order">
+            ЗАКАЗАТЬ
+        </button>
+        <span id="hamburger" class="header__hamburger"></span>
+    </header>      
+    <section id="main" class="main height-100vh padding-bottom-20px">
+        <div class="container container_flex-margin">
+            <h1 class="main__welcome text-shadow">Добро пожаловать в мир сладких шедевров! <br> Мы создаём торты, которые станут украшением любого праздника</h1>
+            <img src="img/logo.png" alt="" class="main__logo">
+            <div class="main__options">
+                <div class="main__options-item">
+                    <span class="main__options-title text-shadow">1000+</span>
+                    <span class="main__options-descr text-shadow">довольных <br> клиентов</span>  
+                </div>
+                <div class="main__options-item">
+                    <span class="main__options-title text-shadow">5 лет</span>
+                    <span class="main__options-descr text-shadow">опыта в кондитерстве</span>
+                </div>
+                <div class="main__options-item">
+                    <span class="main__options-title text-shadow">Лучшие</span>
+                    <span class="main__options-descr text-shadow">ингридиенты и качество</span>  
+                </div>
+            </div>
+            <!-- <button class="button box-shadow">
+                Узнать подробнее
+            </button> -->
+        </div>
+    </section>
+    <section id="examples" class="examples padding-bottom-20px">
+        <div class="container container_flex-margin">
+            <h2 class="title text-shadow">Примеры наших работ</h2>
+            <p class="description">
+                Каждый торт – это настоящее произведение искусства, созданное с любовью и вниманием к деталям.
+            </p>
+            <div class="slider padding-bottom-20px">
+                <img src="icons/prev.svg" class="slider__button slider__button_prev box-shadow"/>
+                <ul id="slider1" class="slider__area">
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Свадебный торт</span>
+                        <span class="slider__descr">Нежный торт с кремовой отделкой</span>
+                        <span class="slider__descr">Вес: 1,5 кг</span>
+                        <span class="slider__descr">Б: 90 г, Ж: 150 г, У: 750 г</span>
+                        <span class="slider__price">1000 руб</span>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad2.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Детский торт</span>
+                        <span class="slider__descr">Красочный торт с фигурками животных</span>
+                        <span class="slider__descr">Вес: 2 кг</span>
+                        <span class="slider__descr">Б: 160 г, Ж: 240 г, У: 1100 г</span>
+                        <span class="slider__price">1500 руб</span>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad3.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Тортик на день рождения</span>
+                        <span class="slider__descr">С шоколадной глазурью и ягодами</span>
+                        <span class="slider__descr">Вес: 2,5 кг</span>
+                        <span class="slider__descr">Б: 175 г, Ж: 275 г, У: 1250 г</span>
+                        <span class="slider__price">2000 руб</span>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad4.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Торт на годовщину</span>
+                        <span class="slider__descr">Элегантный торт с розами</span>
+                        <span class="slider__descr">Вес: 3 кг</span>
+                        <span class="slider__descr">Б: 180 г, Ж: 300 г, У: 1500 г</span>
+                        <span class="slider__price">2500 руб</span>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Торт на 8 марта</span>
+                        <span class="slider__descr">Легкий торт с цветочным декором</span>
+                        <span class="slider__descr">Вес: 1,5 кг</span>
+                        <span class="slider__descr">Б: 90 г, Ж: 135 г, У: 675 г</span>
+                        <span class="slider__price">1000 руб</span>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr2.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Торт на 8 марта</span>
+                        <span class="slider__descr">Торт с ягодами и сливками</span>
+                        <span class="slider__descr">Вес: 2 кг</span>
+                        <span class="slider__descr">Б: 140 г, Ж: 200 г, У: 1000 г</span>
+                        <span class="slider__price">1500 руб</span>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr3.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Торт на 8 марта</span>
+                        <span class="slider__descr">Фруктовый торт с кремом</span>
+                        <span class="slider__descr">Вес: 2,5 кг</span>
+                        <span class="slider__descr">Б: 160 г, Ж: 240 г, У: 1100 г</span>
+                        <span class="slider__price">2000 руб</span>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr4.jpg" alt="img" draggable="false">
+                        </div>
+                        <span class="slider__title">Последний тортик</span>
+                        <span class="slider__descr">Роскошный шоколадный торт</span>
+                        <span class="slider__descr">Вес: 3 кг</span>
+                        <span class="slider__descr">Б: 200 г, Ж: 300 г, У: 1500 г</span>
+                        <span class="slider__price">2500 руб</span>
+                    </li>
+                </ul>                               
+                <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
+            </div>
+            
+            <button class="button button_order box-shadow">
+                Оставить заявку на заказ
+            </button>
+        </div>
+    </section>
+    <section class="questions padding-bottom-20px" id="questions">
+        <div class="container container_flex-margin">
+            <h2 class="title text-shadow title_margin">Почему нужно выбрать нас?</h2>
+            <div class="questions__list">
+                <details class="questions__list-item box-shadow">
+                    <summary class="questions__list-title">Использование натуральных ингредиентов</summary>
+                    <p class="questions__list-descr">
+                        Для создания тортов мы не используем порошки, смеси и заменители – только натуральные продуктывысокого качества.<br>Мы не дружим со словами "маргарин", "искусственный" и другими "страшными" понятиями.
+                    </p>
+                </details>
+                <details class="questions__list-item box-shadow">
+                    <summary class="questions__list-title">Прозрачная цена</summary>
+                    <p class="questions__list-descr">
+                        Мы гарантируем, что цены на наши торты и услуги всегда будут понятными и честными. Вы платите только за то, что выбрали, без скрытых платежей и неожиданностей.
+                    </p>
+                </details>
+                <details class="questions__list-item box-shadow">
+                    <summary class="questions__list-title">Широкий выбор готовых решений для оформления</summary>
+                    <p class="questions__list-descr">
+                        У нас вы найдете множество готовых дизайнов тортов, которые подойдут для любого праздника. Мы предлагаем разнообразные стили и тематики, чтобы каждый мог найти что-то по своему вкусу.
+                    </p>
+                </details>
+                <details class="questions__list-item box-shadow">
+                    <summary class="questions__list-title">Индивидуальный авторский дизайн</summary>
+                    <p class="questions__list-descr">
+                        Наша команда талантливых кондитеров готова создать уникальный торт по вашему желанию. Мы учтем все ваши пожелания и идеи, чтобы ваш торт стал настоящим произведением искусства.
+                    </p>
+                </details>
+                <details class="questions__list-item box-shadow">
+                    <summary class="questions__list-title">Доставка в любую точку Нижнего Тагила</summary>
+                    <p class="questions__list-descr">
+                        Мы обеспечиваем удобную и своевременную доставку тортов по всему Нижнему Тагилу. Вы можете быть уверены, что ваш заказ прибудет в идеальном состоянии и вовремя.
+                    </p>
+                </details>
+                <details class="questions__list-item box-shadow">
+                    <summary class="questions__list-title">Срочные заказы</summary>
+                    <p class="questions__list-descr">
+                        У вас неожиданный праздник или событие? Мы готовы выполнить срочные заказы без ущерба для качества. Просто свяжитесь с нами, и мы сделаем все возможное, чтобы вы получили свой торт в кратчайшие сроки.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" class="feedback padding-bottom-20px">
+        <div class="container container_flex-margin">
+            <h2 class="title text-shadow">Отзывы</h2>
+            <p class="description">
+                Отзывы нашей мастерской тортов на заказ: искренние впечатления довольных клиентов. Делимся историями о наших уникальных тортах, их оформлении и качестве обслуживания. Ваши отзывы вдохновляют нас становиться лучше!
+            </p>
+            <div class="slider">
+                <img src="icons/prev.svg" class="slider__button slider__button_prev box-shadow"/>
+                <ul id="slider1" class="slider__area slider__area_feedback">
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review1.jpg" alt="img" draggable="false"></div>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review2.jpg" alt="img" draggable="false"></div>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review3.jpg" alt="img" draggable="false"></div>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review4.jpg" alt="img" draggable="false"></div>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review5.jpg" alt="img" draggable="false"></div>
+                    </li>
+                    <li class="slider__card box-shadow">
+                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review6.jpg" alt="img" draggable="false"></div>
+                    </li>
+                </ul>
+                <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
+            </div>
+        </div>
+    </section>
+    <section class="about padding-bottom-20px" id="about">
+        <div class="container about__card box-shadow">
+            <div class="row">
+                <h2 class="title title_pink text-shadow">О нас</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 about__descr">
+                    <p>
+                        Наша мастерская была основана несколько лет назад группой энтузиастов, которые мечтали создавать настоящие шедевры кондитерского искусства. Начав с небольшого помещения и нескольких базовых рецептов, мы постепенно расширяли ассортимент и улучшали качество продукции.
+                    </p>
+                    <p>
+                        Сегодня наша мастерская известна не только в нашем городе, но и за его пределами. Мы регулярно участвуем в кулинарных выставках и конкурсах, где наши торты неизменно занимают призовые места. Мы гордимся тем, что можем радовать людей вкусными и красивыми десертами, создавая атмосферу праздника и волшебства.
+                    </p>
+                    <p>
+                        Если вы хотите заказать торт, который станет настоящим украшением вашего торжества, обращайтесь к нам. Мы с радостью воплотим в жизнь любые ваши идеи и пожелания!
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 about__img-wrapper">                    
+                    <img src="img/about.jpg" alt="" class="about__img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 about__info">
+                    <p class="title title_pink title_small text-shadow">Контакты</p>
+                    <address class="about__contacts">
+                        <a class="about__contacts-info" href="tel:+71234567890">Телефон: +7 (123) 456-78-90</a>
+                        <a class="about__contacts-info" href="mailto:info@torty-master.ru"> Email: info@torty-master.ru</a>
+                        <div class="about__contacts-info"">Адрес: Свердловская область, Нижний Тагил</div>
+                        <div class="about__contacts-info">Часы работы: Пн-Пт: 9:00-18:00</div>
+                    </address>                    
+                </div>
+                <div class="col-lg-6 about__info">                        
+                    <p class="title title_pink title_small text-shadow">Мы в соцсетях</p>
+                    <address class="about__contacts">
+                        <a class="about__contacts-info" href="https://wa.me/qr/ZEDTFE36FSR2L1">
+                            <img src="icons/whatsapp.svg" alt="" class="about__contacts-img">
+                            +7 (123) 456-78-90
+                        </a>
+                        <a class="about__contacts-info" href="https://t.me/cakeworkshop">
+                            <img src="icons/telegram.svg" alt="" class="about__contacts-img">
+                            @cakeworkshop
+                        </a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer padding-bottom-20px" id="footer">
+        <div class="container">            
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col_centered">
+                    <a href="#main" class="logo logo_white">                
+                        <img src="img/logo.png" alt="" class="logo-img">
+                        <div class="logo-text">Мастерская тортов</div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col_centered">
+                    <a class="about__contacts-info filter-white" href="tel:+71234567890">+7 (123) 456-78-90</a>
+                    <a class="about__contacts-info filter-white" href="mailto:info@torty-master.ru">info@torty-master.ru</a>
+                </div>
+                <div class="col-lg-4 col_centered">
+                    <a class="about__contacts-info filter-white" href="https://wa.me/qr/ZEDTFE36FSR2L1">
+                        <img src="icons/whatsapp.svg" alt="" class="about__contacts-img filter-white">
+                    </a>
+                    <a class="about__contacts-info" href="https://t.me/cakeworkshop">
+                        <img src="icons/telegram.svg" alt="" class="about__contacts-img filter-white">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu">
+                    <a href="#main" class="menu__link menu__link_white">ГЛАВНАЯ</a>
+                    <a href="#examples" class="menu__link menu__link_white">ПРИМЕРЫ</a>
+                    <a href="#questions" class="menu__link menu__link_white">ВОПРОСЫ</a>
+                    <a href="#feedback" class="menu__link menu__link_white">ОТЗЫВЫ</a>
+                    <a href="#about" class="menu__link menu__link_white">О НАС</a>
+                </div>
+            </div>
+        </div>        
+    </footer>
+    <div class="modal">
+        <div action="order" method="post" class="modal__form">
+            <h2 class="title">Оставьте заявку</h2>
+            <span class="description">с вами свяжутся в ближайшее время</span>
+            <input class="modal__text-field" type="text" name="name" id="name" placeholder="Имя">
+            <input class="modal__text-field" type="phone" name="phone" id="phone" placeholder="Телефон">
+            <input class="modal__text-field" type="email" name="email" id="email" placeholder="Email">
+            <textarea class="modal__text-field modal__text-field_big" name="" id="" placeholder="Пожелания, дополнительный коментарий"></textarea>
+            <input id="order-submit" class="button button_contrast button_margin-bottom box-shadow" type="submit" value="Оставить заявку">
+            <input id="order-cancel" class="button button_contrast box-shadow"" type="button" value="Отмена">
+        </div>
+    </div>
+</body>
+</html>
