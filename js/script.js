@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const element = document.querySelector(blockID)
 
       // Вычисляем расстояние до нужного элемента с учетом отступа
-      const offsetPosition = element.getBoundingClientRect().top + window.scrollY - 60;
+      const offsetPosition = element.getBoundingClientRect().top + window.scrollY - header.offsetHeight;
       
       if(header.classList.contains('header_expand')) toggleHamburger();
 
