@@ -369,7 +369,7 @@ h1,h2,h3{
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
-    height: calc(100vh - 60px);
+    height: calc(100dvh - 60px);
 }
 
 
