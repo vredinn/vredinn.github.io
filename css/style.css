@@ -370,7 +370,6 @@ h1,h2,h3{
     background-size: cover;
     background-attachment:fixed;
     height: calc(100vh - 60px);
-    height: calc((var(--vh, 1vh) * 100) - 60px);
 }
 
 
