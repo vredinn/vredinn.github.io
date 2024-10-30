@@ -77,17 +77,18 @@ h1,h2,h3{
     margin: -5px 0;
 }
 
+.wave_main-container{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
 .wave_top{
     margin-top: -5px;
 }
 
 .wave_bottom{
     margin-bottom: -5px;
-}
-
-.wave_main{
-    position: absolute;
-    bottom:0;
 }
 
 .wave_header{
@@ -358,6 +359,7 @@ h1,h2,h3{
 }
 
 .main{
+    position: relative;
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(../img/main.jpg);
     background-position: center;
     background-size: cover;
