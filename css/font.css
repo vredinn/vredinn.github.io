@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "Lobster";
-    src: local("Lobster"), 
-        url("../fonts/Lobster-Regular.ttf");
+    font-family: "Inter";
+    src: local("Inter"),
+        url("../fonts/Inter-VariableFont_opsz,wght.ttf");
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Inter";
-    src: local("Inter"),
-        url("../fonts/Inter-VariableFont_opsz,wght.ttf");
+    font-family: "TS Remarkered";
+    src: local("TS Remarkered"),
+        url("../fonts/Vitaliy\ Tsygankov\ -\ TS\ Remarker\ Regular\ 2.otf");
     font-style: normal;
 }

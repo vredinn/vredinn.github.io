@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const element = document.querySelector(blockID)
 
       // Вычисляем расстояние до нужного элемента с учетом отступа
-      const offsetPosition = element.getBoundingClientRect().top + window.scrollY - header.offsetHeight;
+      const offsetPosition = element.getBoundingClientRect().top + window.scrollY;
       
       if(header.classList.contains('header_expand')) toggleHamburger();
 
@@ -33,6 +33,30 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
   }
+
+  
+  const main = document.getElementById('main');
+  const containerMain = document.querySelector('.container_main');
+  const waveMain = document.querySelector('.wave_main');
+  containerMain.style.height = 'calc(100% - ' + waveMain.clientHeight*2 + 'px)';
+
+  window.addEventListener('resize', () =>{    
+    containerMain.style.height = 'calc(100% - ' + waveMain.clientHeight*2 + 'px)';
+  });
+
+  // Кнопка возврата на верх страницы
+  const backToTop = document.getElementById('to-top');
+
+  // Показать скрыть кнопку
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300){
+      backToTop.style.visibility = "visible";
+      backToTop.style.opacity = ".5";
+    } else {      
+      backToTop.style.opacity = "0";
+      backToTop.style.visibility = "hidden";
+    }
+  });
 
   // Кнопка вызова формы обратной связи и сама форма
   const orderBtns = document.querySelectorAll(".button_order");
