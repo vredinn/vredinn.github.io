@@ -18,6 +18,10 @@
     .slider__card{        
         scroll-snap-align: start;
     }
+
+    .slider__card-img-wrapper_star{
+        background: none;
+    }
     
     .menu__link_vol:hover{    
         background: none;
@@ -53,6 +57,16 @@
 @media screen and (max-width: 768px){ /*sm*/
 
 
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+    .main{
+        height: auto;
+    }
+
+    .wave_main-container{
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 576px){ /*xs*/

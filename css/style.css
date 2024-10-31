@@ -369,7 +369,7 @@ h1,h2,h3{
     background-position: center;
     background-size: cover;
     background-attachment:fixed;
-    height: calc(100vh - 60px);
+    height: calc(100svh - 60px);
 }
 
 
@@ -506,7 +506,7 @@ h1,h2,h3{
     justify-content: center;
     flex-direction: column;
     border: solid white 5px;
-    overflow: hidden;
+    overflow: visible;
     padding: 5px;
 }
 .slider__card:nth-child(even){
@@ -751,7 +751,6 @@ h1,h2,h3{
 
 
 .modal__form{
-    position:absolute;
     background-color: #fff;
     background: #A8D4E6;
     padding: 20px;
@@ -762,6 +761,8 @@ h1,h2,h3{
     margin-top: -100%;
     transition: opacity .5s, margin-top .5s;
     opacity: 0;
+    overflow: auto;
+    max-height: 100%;
 }
 
 .modal__form_active{
@@ -779,7 +780,8 @@ h1,h2,h3{
 .modal__text-field_big{
     margin: 10px 0;
     border: none;
-    height: 200px;
+    min-height: 100px;
+    max-height: 200px;
     resize: none;
     border-radius: 10px;
 }

@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const element = document.querySelector(blockID)
 
       // Вычисляем расстояние до нужного элемента с учетом отступа
-      const offsetPosition = element.getBoundingClientRect().top + window.scrollY;
-      
-      if(header.classList.contains('header_expand')) toggleHamburger();
+      const offsetPosition = element.getBoundingClientRect().top + window.scrollY - header.offsetHeight + 60;    
 
       // Плавно скроллим на рассчитанную позицию
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       })
+
+      if(header.classList.contains('header_expand')) toggleHamburger();
     })
   }
 
