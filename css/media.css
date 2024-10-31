@@ -57,6 +57,7 @@
 @media screen and (max-width: 768px){ /*sm*/
 
 
+
 }
 
 @media screen and (orientation: landscape) and (max-height: 576px){
@@ -71,6 +72,10 @@
 
 @media screen and (max-width: 576px){ /*xs*/
 
+    .slider__descr{
+        display: none;
+    }
+    
     .header__logo-img{
         margin: 0;
     }
