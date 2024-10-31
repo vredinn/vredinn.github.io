@@ -368,7 +368,6 @@ h1,h2,h3{
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(../img/main.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment:fixed;
     height: calc(100svh - 60px);
 }
 
@@ -445,7 +444,6 @@ h1,h2,h3{
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/examples.webp);
     background-position: center;
     background-size: cover;
-    background-attachment:fixed;
 }
 
 .description{
@@ -599,7 +597,6 @@ h1,h2,h3{
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/questions.webp);
     background-position: center;
     background-size: cover;
-    background-attachment:fixed;
 }
 
 .questions__list{
@@ -659,7 +656,6 @@ h1,h2,h3{
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/feedback.webp);
     background-position: center;
     background-size: cover;
-    background-attachment:fixed;
 }
 
 .questions__list-item:nth-child(even){    
