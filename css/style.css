@@ -8,11 +8,6 @@
     --pink-color: rgb(255, 157, 184);
 }
 
-body{
-    min-height: 100svh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
 
 *{
     font-family: var(--text-font-family);
@@ -860,8 +855,6 @@ h1,h2,h3{
     font-size: var(--descr-font-size);
 }
 
-.cake__details {    
-}
 
 .cake__details-title {
     font-size: var(--descr-font-size-big);
