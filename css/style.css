@@ -8,6 +8,12 @@
     --pink-color: rgb(255, 157, 184);
 }
 
+body{
+    min-height: 100svh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 *{
     font-family: var(--text-font-family);
     color: #333333;
@@ -322,16 +328,16 @@ h1,h2,h3{
     font-weight: 500;
     line-height: normal;
     text-align: center;
-    transition: transform .1s;
+    transition: box-shadow .1s, brightness .1s;
 }
 
-.button:hover{
-    transform: scale(1.05);
+.button:hover{    
+    filter: brightness(.95);
 }
 
-.button:active{
-    transform: scale(.95);    
+.button:active{   
     box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    filter: brightness(.9);
 }
 
 .button:focus{
@@ -347,8 +353,12 @@ h1,h2,h3{
     margin: 0 auto;
 }
 
+.button_bottom{
+    margin-top: auto;
+}
+
 .button_contrast{
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: var(--button-font-size);
     line-height: 22px;
     border-radius: 14px;
@@ -373,7 +383,7 @@ h1,h2,h3{
 
 
 .main__welcome{
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: var(--title-font-family);
     font-size: var(--title-font-size);
     font-weight: 400;
@@ -423,7 +433,7 @@ h1,h2,h3{
 }
 
 .main__options-title{
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: var(--title-font-family);
     font-size: var(--title-font-size);
     font-weight: 400;
@@ -432,7 +442,7 @@ h1,h2,h3{
 }
 
 .main__options-descr{
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-family: var(--text-font-family);
     font-size: var(--descr-font-size);
     font-weight: 500;
@@ -460,7 +470,7 @@ h1,h2,h3{
     z-index: 2;
     height: 50px;
     width: 50px;
-    background: rgb(255, 255, 255);
+    background: #fff;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
@@ -579,19 +589,28 @@ h1,h2,h3{
     font-weight: bold;
     font-size: var(--descr-font-size-big);
     margin: 60px 0 5px;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 .slider__descr {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: var(--descr-font-size);
 }
 .slider__price {
     font-family: var(--title-font-family);
     margin-top: auto;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: var(--descr-font-size);
     font-weight: bold;
+}
+
+.slider__link{
+    color: #fff;
+    font-size: var(--descr-font-size);
+}
+
+.slider__link:hover{
+    color: #fff;
 }
 .questions{
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/questions.webp);
@@ -725,6 +744,15 @@ h1,h2,h3{
     box-shadow: 0px -5px 0px 0px rgb(255, 157, 184);
     background: #A8D4E6;
     padding: 10px 0;
+	flex: 0 0 auto;
+}
+
+.footer_fixed-bottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
 .modal{
@@ -780,4 +808,69 @@ h1,h2,h3{
     max-height: 200px;
     resize: none;
     border-radius: 10px;
+}
+
+.cake{
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.cake__section{
+    background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(../img/cake.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 20px;
+    min-height: 100svh;
+}
+
+.cake__image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cake__info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border: 5px solid var(--pink-color);
+    border-radius: 10px;
+    text-align: center;
+    min-height: 100%;
+}
+
+.cake__price, .cake__title{
+    color: var(--pink-color);
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.cake__price{
+    margin-top: auto;
+}
+
+.cake__price-descr, .cake__descr{
+    color: var(--pink-color);
+    font-size: var(--descr-font-size);
+}
+
+.cake__details {    
+}
+
+.cake__details-title {
+    font-size: var(--descr-font-size-big);
+    margin-bottom: 10px;
+}
+
+.cake__details-descr {
+    list-style: none;
+    font-size: var(--descr-font-size);
+    color: #555;
+    padding: 0;
 }
