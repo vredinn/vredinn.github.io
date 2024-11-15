@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мастерская тортов</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href = "css/media.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/png">
-    <script src="js/script.js" defer></script>
-    <script src="js/slider.js" defer></script>
+    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href = "/css/media.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png">
 </head>
 <body>
     <div id="top"></div>
@@ -20,8 +18,8 @@
         <div class="top__arrow"></div>
     </a>
     <header id="header" class="header">
-        <a href="#" class="logo">                
-            <img src="img/logo.png" alt="" class="logo__img">
+        <a href="/index.html" class="logo">                
+            <img src="/img/logo.png" alt="" class="logo__img">
             <div class="logo__text">Мастерская тортов</div>
         </a>
         <nav class="menu menu_header">
@@ -29,294 +27,304 @@
             <a href="#questions" class="menu__link menu__link_vol">ВОПРОСЫ</a>
             <a href="#feedback" class="menu__link menu__link_vol">ОТЗЫВЫ</a>
             <a href="#about" class="menu__link menu__link_vol">О НАС</a>
+            <a href="/builder.html" class="menu__link menu__link_vol">КОНСТРУКТОР</a>
         </nav>
         <button class="button button_contrast button_header box-shadow button_order">
             ЗАКАЗАТЬ
         </button>
         <span id="hamburger" class="header__hamburger"></span>
-    </header> 
-    <section id="main" class="main">          
-        <svg class="wave wave_top wave_header" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
-        <div class="container container_main">
-                <div class="col-md-6 main__container">
-                    <h1 class="main__welcome text-shadow">Добро пожаловать в мир сладких шедевров! <br> Мы создаём торты, которые станут украшением любого праздника</h1>       
-                    
-                    <div class="main__options">
-                        <div class="main__options-item">
-                            <span class="main__options-title text-shadow">1000+</span>
-                            <span class="main__options-descr text-shadow">довольных <br> клиентов</span>  
+    </header>
+    <main>         
+        <section id="main" class="main">          
+            <svg class="wave wave_top wave_header" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
+            <div class="container container_main">
+                    <div class="col-md-6 main__container">
+                        <h1 class="main__welcome text-shadow">Добро пожаловать в мир сладких шедевров! <br> Мы создаём торты, которые станут украшением любого праздника</h1>       
+                        
+                        <div class="main__options">
+                            <div class="main__options-item">
+                                <span class="main__options-title text-shadow">1000+</span>
+                                <span class="main__options-descr text-shadow">довольных <br> клиентов</span>  
+                            </div>
+                            <div class="main__options-item">
+                                <span class="main__options-title text-shadow">5 лет</span>
+                                <span class="main__options-descr text-shadow">опыта в кондитерстве</span>
+                            </div>
+                            <div class="main__options-item">
+                                <span class="main__options-title text-shadow">Лучшие</span>
+                                <span class="main__options-descr text-shadow">ингридиенты и качество</span>  
+                            </div>
                         </div>
-                        <div class="main__options-item">
-                            <span class="main__options-title text-shadow">5 лет</span>
-                            <span class="main__options-descr text-shadow">опыта в кондитерстве</span>
-                        </div>
-                        <div class="main__options-item">
-                            <span class="main__options-title text-shadow">Лучшие</span>
-                            <span class="main__options-descr text-shadow">ингридиенты и качество</span>  
-                        </div>
+                        <button class="button box-shadow button_center button_order">
+                            Узнать подробнее
+                        </button>
                     </div>
-                    <button class="button box-shadow button_center button_order">
-                        Узнать подробнее
-                    </button>
+            </div>
+            <div class="wave_main-container">
+                <svg class="wave wave_bottom wave_main" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
+            </div>
+        </section>
+        <section id="examples" class="examples">
+            <div class="title-container">            
+                <h2 class="title title_pink">Примеры наших работ</h2>
+            </div>
+            <svg class="wave wave_top" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
+            <div class="container container_flex-margin">
+                <p class="description">
+                    Каждый торт – это настоящее произведение искусства, созданное с любовью и вниманием к деталям.
+                </p>
+                <div class="slider padding-bottom-20px">
+                    <img src="icons/prev.svg" class="slider__button slider__button_prev box-shadow"/>
+                    <ul id="slider1" class="slider__area">
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Свадебный торт</span>
+                            <span class="slider__descr">Нежный торт с кремовой отделкой</span>
+                            <span class="slider__descr">Вес: 1,5 кг</span>
+                            <span class="slider__descr">Б: 90 г, Ж: 150 г, У: 750 г</span>
+                            <span class="slider__price">1000 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad2.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Детский торт</span>
+                            <span class="slider__descr">Красочный торт с фигурками животных</span>
+                            <span class="slider__descr">Вес: 2 кг</span>
+                            <span class="slider__descr">Б: 160 г, Ж: 240 г, У: 1100 г</span>
+                            <span class="slider__price">1500 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad3.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Тортик на день рождения</span>
+                            <span class="slider__descr">С шоколадной глазурью и ягодами</span>
+                            <span class="slider__descr">Вес: 2,5 кг</span>
+                            <span class="slider__descr">Б: 175 г, Ж: 275 г, У: 1250 г</span>
+                            <span class="slider__price">2000 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad4.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Торт на годовщину</span>
+                            <span class="slider__descr">Элегантный торт с розами</span>
+                            <span class="slider__descr">Вес: 3 кг</span>
+                            <span class="slider__descr">Б: 180 г, Ж: 300 г, У: 1500 г</span>
+                            <span class="slider__price">2500 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Торт на 8 марта</span>
+                            <span class="slider__descr">Легкий торт с цветочным декором</span>
+                            <span class="slider__descr">Вес: 1,5 кг</span>
+                            <span class="slider__descr">Б: 90 г, Ж: 135 г, У: 675 г</span>
+                            <span class="slider__price">1000 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr2.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Торт на 8 марта</span>
+                            <span class="slider__descr">Торт с ягодами и сливками</span>
+                            <span class="slider__descr">Вес: 2 кг</span>
+                            <span class="slider__descr">Б: 140 г, Ж: 200 г, У: 1000 г</span>
+                            <span class="slider__price">1500 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr3.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Торт на 8 марта</span>
+                            <span class="slider__descr">Фруктовый торт с кремом</span>
+                            <span class="slider__descr">Вес: 2,5 кг</span>
+                            <span class="slider__descr">Б: 160 г, Ж: 240 г, У: 1100 г</span>
+                            <span class="slider__price">2000 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
+                                <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr4.jpg" alt="img" draggable="false">
+                            </div>
+                            <span class="slider__title">Последний тортик</span>
+                            <span class="slider__descr">Роскошный шоколадный торт</span>
+                            <span class="slider__descr">Вес: 3 кг</span>
+                            <span class="slider__descr">Б: 200 г, Ж: 300 г, У: 1500 г</span>
+                            <span class="slider__price">2500 руб</span>
+                            <a class="slider__link" href="./cakes/cake1.html">Подробнее...</a>
+                        </li>
+                    </ul>                               
+                    <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
                 </div>
-        </div>
-        <div class="wave_main-container">
-            <svg class="wave wave_bottom wave_main" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
-        </div>
-    </section>
-    <section id="examples" class="examples">
-        <div class="title-container">            
-            <h2 class="title title_pink">Примеры наших работ</h2>
-        </div>
-        <svg class="wave wave_top" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
-        <div class="container container_flex-margin">
-            <p class="description">
-                Каждый торт – это настоящее произведение искусства, созданное с любовью и вниманием к деталям.
-            </p>
-            <div class="slider padding-bottom-20px">
-                <img src="icons/prev.svg" class="slider__button slider__button_prev box-shadow"/>
-                <ul id="slider1" class="slider__area">
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Свадебный торт</span>
-                        <span class="slider__descr">Нежный торт с кремовой отделкой</span>
-                        <span class="slider__descr">Вес: 1,5 кг</span>
-                        <span class="slider__descr">Б: 90 г, Ж: 150 г, У: 750 г</span>
-                        <span class="slider__price">1000 руб</span>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad2.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Детский торт</span>
-                        <span class="slider__descr">Красочный торт с фигурками животных</span>
-                        <span class="slider__descr">Вес: 2 кг</span>
-                        <span class="slider__descr">Б: 160 г, Ж: 240 г, У: 1100 г</span>
-                        <span class="slider__price">1500 руб</span>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad3.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Тортик на день рождения</span>
-                        <span class="slider__descr">С шоколадной глазурью и ягодами</span>
-                        <span class="slider__descr">Вес: 2,5 кг</span>
-                        <span class="slider__descr">Б: 175 г, Ж: 275 г, У: 1250 г</span>
-                        <span class="slider__price">2000 руб</span>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/svad4.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Торт на годовщину</span>
-                        <span class="slider__descr">Элегантный торт с розами</span>
-                        <span class="slider__descr">Вес: 3 кг</span>
-                        <span class="slider__descr">Б: 180 г, Ж: 300 г, У: 1500 г</span>
-                        <span class="slider__price">2500 руб</span>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Торт на 8 марта</span>
-                        <span class="slider__descr">Легкий торт с цветочным декором</span>
-                        <span class="slider__descr">Вес: 1,5 кг</span>
-                        <span class="slider__descr">Б: 90 г, Ж: 135 г, У: 675 г</span>
-                        <span class="slider__price">1000 руб</span>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr2.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Торт на 8 марта</span>
-                        <span class="slider__descr">Торт с ягодами и сливками</span>
-                        <span class="slider__descr">Вес: 2 кг</span>
-                        <span class="slider__descr">Б: 140 г, Ж: 200 г, У: 1000 г</span>
-                        <span class="slider__price">1500 руб</span>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr3.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Торт на 8 марта</span>
-                        <span class="slider__descr">Фруктовый торт с кремом</span>
-                        <span class="slider__descr">Вес: 2,5 кг</span>
-                        <span class="slider__descr">Б: 160 г, Ж: 240 г, У: 1100 г</span>
-                        <span class="slider__price">2000 руб</span>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper slider__card-img-wrapper_star">
-                            <img class="slider__card-img slider__card-img_star" src="./img/cakes/dr4.jpg" alt="img" draggable="false">
-                        </div>
-                        <span class="slider__title">Последний тортик</span>
-                        <span class="slider__descr">Роскошный шоколадный торт</span>
-                        <span class="slider__descr">Вес: 3 кг</span>
-                        <span class="slider__descr">Б: 200 г, Ж: 300 г, У: 1500 г</span>
-                        <span class="slider__price">2500 руб</span>
-                    </li>
-                </ul>                               
-                <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
+                <a href="/builder.html" class="button box-shadow">
+                    Создать свой тортик
+                </a>
             </div>
-            
-            <button class="button button_order box-shadow">
-                Оставить заявку на заказ
-            </button>
-        </div>
-        <svg class="wave wave_bottom" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
-    </section>
-    <section class="questions" id="questions">
-        <div class="title-container">
-            <h2 class="title title_margin title_pink">Почему нужно выбрать нас?</h2>
-        </div>
-        <svg class="wave wave_top" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
-        <div class="container container_flex-margin">
-            <div class="questions__list">
-                <details class="questions__list-item box-shadow">
-                    <summary class="questions__list-title">Использование натуральных ингредиентов</summary>
-                    <p class="questions__list-descr">
-                        Для создания тортов мы не используем порошки, смеси и заменители – только натуральные продуктывысокого качества.<br>Мы не дружим со словами "маргарин", "искусственный" и другими "страшными" понятиями.
-                    </p>
-                </details>
-                <details class="questions__list-item box-shadow">
-                    <summary class="questions__list-title">Прозрачная цена</summary>
-                    <p class="questions__list-descr">
-                        Мы гарантируем, что цены на наши торты и услуги всегда будут понятными и честными. Вы платите только за то, что выбрали, без скрытых платежей и неожиданностей.
-                    </p>
-                </details>
-                <details class="questions__list-item box-shadow">
-                    <summary class="questions__list-title">Широкий выбор готовых решений для оформления</summary>
-                    <p class="questions__list-descr">
-                        У нас вы найдете множество готовых дизайнов тортов, которые подойдут для любого праздника. Мы предлагаем разнообразные стили и тематики, чтобы каждый мог найти что-то по своему вкусу.
-                    </p>
-                </details>
-                <details class="questions__list-item box-shadow">
-                    <summary class="questions__list-title">Индивидуальный авторский дизайн</summary>
-                    <p class="questions__list-descr">
-                        Наша команда талантливых кондитеров готова создать уникальный торт по вашему желанию. Мы учтем все ваши пожелания и идеи, чтобы ваш торт стал настоящим произведением искусства.
-                    </p>
-                </details>
-                <details class="questions__list-item box-shadow">
-                    <summary class="questions__list-title">Доставка в любую точку Нижнего Тагила</summary>
-                    <p class="questions__list-descr">
-                        Мы обеспечиваем удобную и своевременную доставку тортов по всему Нижнему Тагилу. Вы можете быть уверены, что ваш заказ прибудет в идеальном состоянии и вовремя.
-                    </p>
-                </details>
-                <details class="questions__list-item box-shadow">
-                    <summary class="questions__list-title">Срочные заказы</summary>
-                    <p class="questions__list-descr">
-                        У вас неожиданный праздник или событие? Мы готовы выполнить срочные заказы без ущерба для качества. Просто свяжитесь с нами, и мы сделаем все возможное, чтобы вы получили свой торт в кратчайшие сроки.
-                    </p>
-                </details>
+            <svg class="wave wave_bottom" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
+        </section>
+        <section class="questions" id="questions">
+            <div class="title-container">
+                <h2 class="title title_margin title_pink">Почему нужно выбрать нас?</h2>
             </div>
-        </div>
-        <svg class="wave wave_bottom" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-                <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" 
-                    d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z">
-                </path>
-            </svg>
-    </section>
-    <section id="feedback" class="feedback">
-        <div class="title-container">            
-            <h2 class="title title_pink">Отзывы</h2>
-        </div>
-        <svg class="wave wave_top" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
-        <div class="container container_flex-margin">
-            <p class="description">
-                Отзывы нашей мастерской тортов на заказ: искренние впечатления довольных клиентов. Делимся историями о наших уникальных тортах, их оформлении и качестве обслуживания. Ваши отзывы вдохновляют нас становиться лучше!
-            </p>
-            <div class="slider">
-                <img src="icons/prev.svg" class="slider__button slider__button_prev box-shadow"/>
-                <ul id="slider1" class="slider__area slider__area_feedback">
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review1.jpg" alt="img" draggable="false"></div>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review2.jpg" alt="img" draggable="false"></div>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review3.jpg" alt="img" draggable="false"></div>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review4.jpg" alt="img" draggable="false"></div>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review5.jpg" alt="img" draggable="false"></div>
-                    </li>
-                    <li class="slider__card box-shadow">
-                        <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review6.jpg" alt="img" draggable="false"></div>
-                    </li>
-                </ul>
-                <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
-            </div>
-        </div>
-        <svg class="wave wave_bottom" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
-    </section>
-    
-    <section class="about" id="about">
-        <div class="title-container">            
-            <h2 class="title title_pink">О нас</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 about__descr">
-                    <p>
-                        Наша мастерская была основана несколько лет назад группой энтузиастов, которые мечтали создавать настоящие шедевры кондитерского искусства. Начав с небольшого помещения и нескольких базовых рецептов, мы постепенно расширяли ассортимент и улучшали качество продукции.
-                    </p>
-                    <p>
-                        Сегодня наша мастерская известна не только в нашем городе, но и за его пределами. Мы регулярно участвуем в кулинарных выставках и конкурсах, где наши торты неизменно занимают призовые места. Мы гордимся тем, что можем радовать людей вкусными и красивыми десертами, создавая атмосферу праздника и волшебства.
-                    </p>
-                    <p>
-                        Если вы хотите заказать торт, который станет настоящим украшением вашего торжества, обращайтесь к нам. Мы с радостью воплотим в жизнь любые ваши идеи и пожелания!
-                    </p>
-                </div>
-                <div class="col-lg-6 col-md-12 about__img-wrapper">                    
-                    <img src="img/about.jpg" alt="" class="about__img">
+            <svg class="wave wave_top" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
+            <div class="container container_flex-margin">
+                <div class="questions__list">
+                    <details class="questions__list-item box-shadow">
+                        <summary class="questions__list-title">Использование натуральных ингредиентов</summary>
+                        <p class="questions__list-descr">
+                            Для создания тортов мы не используем порошки, смеси и заменители – только натуральные продуктывысокого качества.<br>Мы не дружим со словами "маргарин", "искусственный" и другими "страшными" понятиями.
+                        </p>
+                    </details>
+                    <details class="questions__list-item box-shadow">
+                        <summary class="questions__list-title">Прозрачная цена</summary>
+                        <p class="questions__list-descr">
+                            Мы гарантируем, что цены на наши торты и услуги всегда будут понятными и честными. Вы платите только за то, что выбрали, без скрытых платежей и неожиданностей.
+                        </p>
+                    </details>
+                    <details class="questions__list-item box-shadow">
+                        <summary class="questions__list-title">Широкий выбор готовых решений для оформления</summary>
+                        <p class="questions__list-descr">
+                            У нас вы найдете множество готовых дизайнов тортов, которые подойдут для любого праздника. Мы предлагаем разнообразные стили и тематики, чтобы каждый мог найти что-то по своему вкусу.
+                        </p>
+                    </details>
+                    <details class="questions__list-item box-shadow">
+                        <summary class="questions__list-title">Индивидуальный авторский дизайн</summary>
+                        <p class="questions__list-descr">
+                            Наша команда талантливых кондитеров готова создать уникальный торт по вашему желанию. Мы учтем все ваши пожелания и идеи, чтобы ваш торт стал настоящим произведением искусства.
+                        </p>
+                    </details>
+                    <details class="questions__list-item box-shadow">
+                        <summary class="questions__list-title">Доставка в любую точку Нижнего Тагила</summary>
+                        <p class="questions__list-descr">
+                            Мы обеспечиваем удобную и своевременную доставку тортов по всему Нижнему Тагилу. Вы можете быть уверены, что ваш заказ прибудет в идеальном состоянии и вовремя.
+                        </p>
+                    </details>
+                    <details class="questions__list-item box-shadow">
+                        <summary class="questions__list-title">Срочные заказы</summary>
+                        <p class="questions__list-descr">
+                            У вас неожиданный праздник или событие? Мы готовы выполнить срочные заказы без ущерба для качества. Просто свяжитесь с нами, и мы сделаем все возможное, чтобы вы получили свой торт в кратчайшие сроки.
+                        </p>
+                    </details>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 about__info">
-                    <p class="title title_pink title_small">Контакты</p>
-                    <address class="about__contacts">
-                        <a class="about__contacts-info" href="tel:+71234567890">Телефон: +7 (123) 456-78-90</a>
-                        <a class="about__contacts-info" href="mailto:info@torty-master.ru"> Email: info@torty-master.ru</a>
-                        <div class="about__contacts-info">Адрес: Свердловская область, Нижний Тагил</div>
-                        <div class="about__contacts-info">Часы работы: Пн-Пт: 9:00-18:00</div>
-                    </address>                    
-                </div>
-                <div class="col-lg-6 about__info">                        
-                    <p class="title title_pink title_small">Мы в соцсетях</p>
-                    <address class="about__contacts">
-                        <a class="about__contacts-info" href="https://t.me/cakeworkshop">
-                            <img src="icons/vk.svg" alt="" class="about__contacts-img">
-                            vk.com/cakeworkshop
-                        </a>
-                        <a class="about__contacts-info" href="https://wa.me/qr/ZEDTFE36FSR2L1">
-                            <img src="icons/whatsapp.svg" alt="" class="about__contacts-img">
-                            +7 (123) 456-78-90
-                        </a>
-                        <a class="about__contacts-info" href="https://t.me/cakeworkshop">
-                            <img src="icons/telegram.svg" alt="" class="about__contacts-img">
-                            @cakeworkshop
-                        </a>
-                    </address>
+            <svg class="wave wave_bottom" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                        <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+                    </linearGradient>
+                </defs>
+                    <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" 
+                        d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z">
+                    </path>
+                </svg>
+        </section>
+        <section id="feedback" class="feedback">
+            <div class="title-container">            
+                <h2 class="title title_pink">Отзывы</h2>
+            </div>
+            <svg class="wave wave_top" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
+            <div class="container container_flex-margin">
+                <p class="description">
+                    Отзывы нашей мастерской тортов на заказ: искренние впечатления довольных клиентов. Делимся историями о наших уникальных тортах, их оформлении и качестве обслуживания. Ваши отзывы вдохновляют нас становиться лучше!
+                </p>
+                <div class="slider">
+                    <img src="icons/prev.svg" class="slider__button slider__button_prev box-shadow"/>
+                    <ul id="slider1" class="slider__area slider__area_feedback">
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review1.jpg" alt="img" draggable="false"></div>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review2.jpg" alt="img" draggable="false"></div>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review3.jpg" alt="img" draggable="false"></div>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review4.jpg" alt="img" draggable="false"></div>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review5.jpg" alt="img" draggable="false"></div>
+                        </li>
+                        <li class="slider__card box-shadow">
+                            <div class="slider__card-img-wrapper"><img class="slider__card-img" src="./img/feedback/review6.jpg" alt="img" draggable="false"></div>
+                        </li>
+                    </ul>
+                    <img src="icons/next.svg" class="slider__button slider__button_next box-shadow"/>
                 </div>
             </div>
-        </div>
-    </section>
+            <svg class="wave wave_bottom" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 99" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,10L30,8.3C60,7,120,3,180,15C240,27,300,53,360,58.3C420,63,480,47,540,36.7C600,27,660,23,720,25C780,27,840,33,900,43.3C960,53,1020,67,1080,71.7C1140,77,1200,73,1260,60C1320,47,1380,23,1440,26.7C1500,30,1560,60,1620,71.7C1680,83,1740,77,1800,66.7C1860,57,1920,43,1980,38.3C2040,33,2100,37,2160,46.7C2220,57,2280,73,2340,68.3C2400,63,2460,37,2520,36.7C2580,37,2640,63,2700,68.3C2760,73,2820,57,2880,43.3C2940,30,3000,20,3060,28.3C3120,37,3180,63,3240,68.3C3300,73,3360,57,3420,53.3C3480,50,3540,60,3600,66.7C3660,73,3720,77,3780,73.3C3840,70,3900,60,3960,55C4020,50,4080,50,4140,45C4200,40,4260,30,4290,25L4320,20L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
+        </section>
+        
+        <section class="about" id="about">
+            <div class="title-container">            
+                <h2 class="title title_pink">О нас</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 about__descr">
+                        <p>
+                            Наша мастерская была основана несколько лет назад группой энтузиастов, которые мечтали создавать настоящие шедевры кондитерского искусства. Начав с небольшого помещения и нескольких базовых рецептов, мы постепенно расширяли ассортимент и улучшали качество продукции.
+                        </p>
+                        <p>
+                            Сегодня наша мастерская известна не только в нашем городе, но и за его пределами. Мы регулярно участвуем в кулинарных выставках и конкурсах, где наши торты неизменно занимают призовые места. Мы гордимся тем, что можем радовать людей вкусными и красивыми десертами, создавая атмосферу праздника и волшебства.
+                        </p>
+                        <p>
+                            Если вы хотите заказать торт, который станет настоящим украшением вашего торжества, обращайтесь к нам. Мы с радостью воплотим в жизнь любые ваши идеи и пожелания!
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about__img-wrapper">                    
+                        <img src="img/about.jpg" alt="" class="about__img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 about__info">
+                        <p class="title title_pink title_small">Контакты</p>
+                        <address class="about__contacts">
+                            <a class="about__contacts-info" href="tel:+71234567890">Телефон: +7 (123) 456-78-90</a>
+                            <a class="about__contacts-info" href="mailto:info@torty-master.ru"> Email: info@torty-master.ru</a>
+                            <div class="about__contacts-info">Адрес: Свердловская область, Нижний Тагил</div>
+                            <div class="about__contacts-info">Часы работы: Пн-Пт: 9:00-18:00</div>
+                        </address>                    
+                    </div>
+                    <div class="col-lg-6 about__info">                        
+                        <p class="title title_pink title_small">Мы в соцсетях</p>
+                        <address class="about__contacts">
+                            <a class="about__contacts-info" href="https://t.me/cakeworkshop">
+                                <img src="icons/vk.svg" alt="" class="about__contacts-img">
+                                vk.com/cakeworkshop
+                            </a>
+                            <a class="about__contacts-info" href="https://wa.me/qr/ZEDTFE36FSR2L1">
+                                <img src="icons/whatsapp.svg" alt="" class="about__contacts-img">
+                                +7 (123) 456-78-90
+                            </a>
+                            <a class="about__contacts-info" href="https://t.me/cakeworkshop">
+                                <img src="icons/telegram.svg" alt="" class="about__contacts-img">
+                                @cakeworkshop
+                            </a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer class="footer" id="footer">
         <div class="container">            
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-3 col-sm-6">
                     <a href="#main" class="logo logo_white">                
-                        <img src="img/logo.png" alt="" class="logo__img logo__img_footer">
+                        <img src="/img/logo.png" alt="" class="logo__img logo__img_footer">
                         <div class="logo__text">Мастерская тортов</div>
                     </a>
                 </div>
@@ -325,18 +333,20 @@
                     <a class="about__contacts-info filter-white" href="mailto:info@torty-master.ru">info@torty-master.ru</a>
                         
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <div style="position:relative;overflow:hidden;">
                             <a href="https://yandex.ru/maps/geo/nizhniy_tagil/53157519/?ll=59.984262%2C57.932058&utm_medium=mapframe&utm_source=maps&z=11.12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Нижний Тагил — Яндекс Карты</a>
                             <iframe src="https://yandex.ru/map-widget/v1/?ll=59.984262%2C57.932058&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzE1NzUxORJO0KDQvtGB0YHQuNGPLCDQodCy0LXRgNC00LvQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCd0LjQttC90LjQuSDQotCw0LPQuNC7IgoNyuJvQhVYoWdC&z=11.12" width="100%" height="200" frameborder="1" allowfullscreen="true" style="position:relative; border-radius: 10px;"></iframe>
                     </div>
                 </div>
-                <div class="col-lg-1">                    
+                <div class="col-lg-2">                    
                     <div class="menu menu_footer">
-                        <a href="#examples" class="menu__link menu__link_white">ПРИМЕРЫ</a>
-                        <a href="#questions" class="menu__link menu__link_white">ВОПРОСЫ</a>
-                        <a href="#feedback" class="menu__link menu__link_white">ОТЗЫВЫ</a>
-                        <a href="#about" class="menu__link menu__link_white">О НАС</a>
+                        <a href="/index.html" class="menu__link menu__link_white">ГЛАВНАЯ</a>
+                        <a href="/index.html#examples" class="menu__link menu__link_white">ПРИМЕРЫ</a>
+                        <a href="/index.html#questions" class="menu__link menu__link_white">ВОПРОСЫ</a>
+                        <a href="/index.html#feedback" class="menu__link menu__link_white">ОТЗЫВЫ</a>
+                        <a href="/index.html#about" class="menu__link menu__link_white">О НАС</a>                        
+                        <a href="/builder.html" class="menu__link menu__link_white">КОНСТРУКТОР</a>
                     </div>
                 </div>
             </div>
@@ -355,4 +365,11 @@
         </div>
     </div>
 </body>
+<script src="/js/toTop.js" defer></script>
+<script src="/js/slider.js" defer></script>
+<script src="/js/scroll.js" defer></script>
+<script src="/js/hamburger.js" defer></script>
+<script src="/js/main.js" defer></script>
+<script src="/js/modal.js" defer></script>
+<script src="/js/footer.js" defer></script>
 </html>
