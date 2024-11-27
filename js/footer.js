@@ -3,8 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', footerToBottom())
 
-    console.log(document.body.offsetHeight);
-
     footerToBottom();
 
     function footerToBottom(){

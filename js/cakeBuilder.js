@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
     fetch("/js/cakeOptions.json")
         .then(response => response.json())
         .then(data => {
@@ -44,11 +45,62 @@ document.addEventListener("DOMContentLoaded", () => {
     cancelBtn.addEventListener('click', () => {
         toggleModalVisibility();
     });
+
+        const layers_info = document.querySelector('.cake-info__layers-info');
+    
+        layers_info.addEventListener("mousedown", (e) => {
+            dragStart(e, layers_info);
+    
+            function onMouseMove(e) {
+                dragging(e, layers_info);
+            }
+    
+            function onMouseUp() {
+                dragStop(layers_info);
+                window.removeEventListener("mousemove", onMouseMove);
+                window.removeEventListener("mouseup", onMouseUp);
+            }
+    
+            window.addEventListener("mousemove", onMouseMove);
+            window.addEventListener("mouseup", onMouseUp);
+        });
+
 });
 
+      
+let isDragging = false, startX, startScrollLeft;
 
+// Начало перетаскивания
+function dragStart(e, obj) {
+    isDragging = false; // Изначально не считаем действие перетаскиванием
+    startX = e.pageX || e.touches[0].pageX;
+    startScrollLeft = obj.scrollLeft;
+}
+
+// Логика перетаскивания
+function dragging(e, obj) {
+    const currentX = e.pageX || e.touches[0].pageX;
+    const diff = Math.abs(currentX - startX);
+
+    if (diff > 1) { // Если движение достаточно значительное
+        isDragging = true; // Считаем это перетаскиванием
+        document.body.style.setProperty('cursor', 'grab');
+    }
+
+    if (isDragging) {
+        obj.scrollLeft = startScrollLeft - (currentX - startX);
+    }
+}
+// Остановка перетаскивания
+function dragStop(obj) {
+    setTimeout(() => {
+        isDragging = false;
+        document.body.removeAttribute('style'); 
+    }, 0); // Немного задерживаем сброс для обработки click
+}
     
 function addLayer() {
+    
     if (!window.cakeOptions) return;
     const layers = document.querySelectorAll(".layer");
 
@@ -62,6 +114,8 @@ function addLayer() {
     const layerContainer = document.createElement("div");
     layerContainer.classList.add("layer", "row", "mb-2", "align-items-center", "box-shadow");
 
+        
+
     // Генерация HTML для наполнителя (радиокнопки)
     const fillingsOptions = window.cakeOptions.fillings.map(
         (filling, index) => `
@@ -74,7 +128,7 @@ function addLayer() {
                 <div class="option__price">
                     ${filling.price} руб/кг
                 </div>
-                <img src="${filling.image}" class="option__img option__img_circle" >
+                <img src="${filling.image}" class="option__img option__img_circle" draggable="false">
                 <div class="option__info">
                     ${filling.description}
                 </div>
@@ -91,7 +145,7 @@ function addLayer() {
                 <div class="option__name">                    
                     ${shapes.name}
                 </div>
-                <img src="${shapes.image}" class="option__img mb-2" >
+                <img src="${shapes.image}" class="option__img mb-2" draggable="false">
                 <input class="layer__shape_custom custom-text" placeholder="Свой вариант" type="text" maxlength="100" name="shape-text-${layers.length + 1}" id="${shapes.value}-text-${layers.length + 1}"}>
             </div>
         </label>` : `
@@ -101,7 +155,7 @@ function addLayer() {
                 <div class="option__name">                    
                     ${shapes.name}
                 </div>
-                <img src="${shapes.image}" class="option__img" >
+                <img src="${shapes.image}" class="option__img" draggable="false">
             </div>            
         </label>`
     ).join("");
@@ -118,7 +172,7 @@ function addLayer() {
                 <div class="option__price">
                     +${ingredient.price} руб
                 </div>
-                <img src="${ingredient.image}" class="option__img mb-2" >
+                <img src="${ingredient.image}" class="option__img mb-2" draggable="false" >
                 <input type="text" maxlength="100" name="ingridient-text-${layers.length + 1}" class="layer__custom-ingredient custom-text" placeholder="Свой вариант" id="${ingredient.value}-text-${layers.length + 1}">
             </div>
         </label>` : `
@@ -131,7 +185,7 @@ function addLayer() {
                 <div class="option__price">
                     +${ingredient.price} руб
                 </div>
-                <img src="${ingredient.image}" class="option__img" >
+                <img src="${ingredient.image}" class="option__img" draggable="false">
                 <div class="option__info"">
                     <p>${ingredient.description}</p>
                 </div>
@@ -152,7 +206,7 @@ function addLayer() {
                 <div class="option__price">
                     +${decoration.price} руб
                 </div>
-                <img src="${decoration.image}" class="option__img mb-2" >
+                <img src="${decoration.image}" class="option__img mb-2" draggable="false">
                 <input type="text" maxlength="100" class="layer__custom-decoration custom-text" placeholder="Свой вариант" name="decoration-text-${layers.length + 1}" id="${decoration.value}-text-${layers.length + 1}">
             </div>
         </label>` : `
@@ -165,7 +219,7 @@ function addLayer() {
                 <div class="option__price">
                     +${decoration.price} руб
                 </div>
-                <img src="${decoration.image}" class="option__img" >
+                <img src="${decoration.image}" class="option__img" draggable="false">
                 <div class="option__info">
                     ${decoration.description}
                 </div>
@@ -178,9 +232,14 @@ function addLayer() {
         <h3 class="title title_pink text-center layer__title">Ярус ${document.querySelectorAll(".layer").length + 1}</h3><span class="layer__title-arrow"></span>
     </div>
         <div class="layer__options">   
-            <div class="col-md-12 mb-2 options-container">
-                <label class="layer__option-title title_pink">Вес яруса: <input type="number" class="form-control layer__weight" value="1" step="0.1" min="0.5" max="10" onchange="valueRound(this)"> кг</label>
-                
+            <div class="col-md-12 mb-2">
+                <div class="layer__option-title title_pink">Вес яруса:</div>
+                <div class="layer__weight-wrapper">
+                    <input type="range" class="form-control layer__weight" value="0.5" step="0.5" min="0.5" max="10" oninput="rangeInput(this)"/>
+                    <output id="weightvalue" class="layer__weight-value">
+                        <span class="layer__weight-text">0.5 кг</span>
+                    </output>
+                </div>                
             </div>     
             <div class="row">
                 <div class="col-lg-12 mb-2">
@@ -253,9 +312,55 @@ function addLayer() {
             layerContainer.querySelector(".layer__options").classList.toggle("layer__options_hidden");
         });
     });
-    layerContainer.querySelector(".layer__weight").addEventListener("change", calculateTotal);
+
+    layerContainer.querySelectorAll('.options-container').forEach(options_container => {
+        options_container.addEventListener("mousedown", (e) => {
+            dragStart(e, options_container);
+    
+            function onMouseMove(e) {
+                dragging(e, options_container);
+            }
+    
+            function onMouseUp() {
+                dragStop(options_container);
+                window.removeEventListener("mousemove", onMouseMove);
+                window.removeEventListener("mouseup", onMouseUp);
+            }
+    
+            window.addEventListener("mousemove", onMouseMove);
+            window.addEventListener("mouseup", onMouseUp);
+        });
+    
+        // Предотвращение активации чекбоксов при перетаскивании
+        options_container.addEventListener("click", (e) => {
+            if (isDragging) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        });
+    
+        // Добавляем поддержку touch-событий
+        options_container.addEventListener("touchstart", (e) => dragStart(e, options_container));
+        options_container.addEventListener("touchmove", (e) => dragging(e, options_container));
+        options_container.addEventListener("touchend", () => dragStop(options_container));
+    });
+
     document.getElementById("layers-container").appendChild(layerContainer);    
     updateLayerNumbers();
+    calculateTotal();
+}
+
+function rangeInput(object) {
+    const output = object.nextElementSibling;
+    const value = object.value;
+    const min = object.min;
+    const max = object.max;
+    const valuePercent = `${100 - ((max - value) / (max - min) * 100)}%`;
+
+    output.querySelector('.layer__weight-text').innerText = `${value} кг`;
+    output.style.left =  `${valuePercent}`;
+    output.style.transform = `translateX(-${valuePercent})`;    
+    object.style.backgroundSize = `${valuePercent}`;
     calculateTotal();
 }
 
