@@ -131,4 +131,12 @@
     .questions__list-title{        
         font-size: 18px;
     }
+    
+    .cake{
+        border-radius:0;
+    }
+
+    .builder__container{
+        border-radius: 0;
+    }
 }

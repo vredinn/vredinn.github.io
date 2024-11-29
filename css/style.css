@@ -1158,7 +1158,7 @@ h1,h2,h3{
 }
 
 @-moz-document url-prefix() {
-    .cake-info__layers-info, .options-container, body {
+    body, .cake-info__layers-info, .options-container {
         scrollbar-color: var(--pink-color) #fff;
     }
 }
@@ -1201,4 +1201,25 @@ h1,h2,h3{
 .cake-info__container{
     position: sticky;
     top: 10px;
+}
+
+.cake-info__layer-link{
+    display: block;
+    font-family: var(--title-font-family);
+    font-size: var(--descr-font-size-big);
+    text-align: center;
+    color: var(--pink-color);
+    text-decoration: underline;
+    line-height: normal;
+    transition: scale .25s;
+}
+
+.cake-info__layer-link:hover{
+    cursor: pointer;
+    color: var(--pink-color);
+    scale: 1.1;
+}
+
+.cake-info__layer-link:active{
+    scale: .9;
 }

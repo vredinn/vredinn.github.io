@@ -113,14 +113,13 @@ function addLayer() {
 
     const layerContainer = document.createElement("div");
     layerContainer.classList.add("layer", "row", "mb-2", "align-items-center", "box-shadow");
-
         
 
     // Генерация HTML для наполнителя (радиокнопки)
     const fillingsOptions = window.cakeOptions.fillings.map(
         (filling, index) => `
         <label class="option mb-2">
-            <input class="option__input layer__base" type="radio" name="filling__${layers.length + 1}" id="${filling.value}-${layers.length + 1}" value="${filling.value}" data-price="${filling.price}" data-image="${filling.image}" data-description="${filling.description}" ${index === 0 ? 'checked' : ''}>
+            <input class="option__input layer__base" type="radio" name="filling__${layers.length + 1}" value="${filling.value}" data-price="${filling.price}" ${index === 0 ? 'checked' : ''}>
             <div class="option__card">
                 <div class="option__name">
                     ${filling.name}
@@ -140,17 +139,17 @@ function addLayer() {
     const shapesOptions = window.cakeOptions.shapes.map(
         (shapes, index) => shapes.value == "shape_custom" ? `
         <label class="option mb-2">
-            <input class="option__input layer__shape" type="radio" name="shapes-${layers.length + 1}" id="${shapes.value}-${layers.length + 1}" value="${shapes.value}" ${index === 0 ? 'checked' : ''}>
+            <input class="option__input layer__shape" type="radio" value="${shapes.value}" ${index === 0 ? 'checked' : ''}>
             <div class="option__card">
                 <div class="option__name">                    
                     ${shapes.name}
                 </div>
                 <img src="${shapes.image}" class="option__img mb-2" draggable="false">
-                <input class="layer__shape_custom custom-text" placeholder="Свой вариант" type="text" maxlength="100" name="shape-text-${layers.length + 1}" id="${shapes.value}-text-${layers.length + 1}"}>
+                <input class="layer__shape_custom custom-text" placeholder="Свой вариант" type="text" maxlength="100">
             </div>
         </label>` : `
         <label class="option mb-2">
-            <input class="option__input layer__shape" type="radio" name="shapes-${layers.length + 1}" id="${shapes.value}-${layers.length + 1}" value="${shapes.value}" ${index === 0 ? 'checked' : ''}>
+            <input class="option__input layer__shape" type="radio" value="${shapes.value}" ${index === 0 ? 'checked' : ''}>
             <div class="option__card">
                 <div class="option__name">                    
                     ${shapes.name}
@@ -164,7 +163,7 @@ function addLayer() {
     const ingredientsOptions = window.cakeOptions.ingredients.map(
         ingredient => ingredient.value == "ingridient_custom" ? `
         <label class="option mb-2">
-            <input type="checkbox" class="option__input layer__ingredient" id="${ingredient.value}-${layers.length + 1}" value="${ingredient.value}" data-price="${ingredient.price}">
+            <input type="checkbox" class="option__input layer__ingredient" value="${ingredient.value}" data-price="${ingredient.price}">
             <div class="option__card">
                 <div class="option__name">
                     ${ingredient.name} 
@@ -173,11 +172,11 @@ function addLayer() {
                     +${ingredient.price} руб
                 </div>
                 <img src="${ingredient.image}" class="option__img mb-2" draggable="false" >
-                <input type="text" maxlength="100" name="ingridient-text-${layers.length + 1}" class="layer__custom-ingredient custom-text" placeholder="Свой вариант" id="${ingredient.value}-text-${layers.length + 1}">
+                <input type="text" maxlength="100" class="layer__custom-ingredient custom-text" placeholder="Свой вариант">
             </div>
         </label>` : `
         <label class="option mb-2">
-            <input type="checkbox" class="option__input layer__ingredient" id="${ingredient.value}-${layers.length + 1}" value="${ingredient.value}" data-price="${ingredient.price}" data-image="${ingredient.image}" data-description="${ingredient.description}">
+            <input type="checkbox" class="option__input layer__ingredient" value="${ingredient.value}" data-price="${ingredient.price}">
             <div class="option__card">
                 <div class="option__name">
                     ${ingredient.name} 
@@ -198,7 +197,7 @@ function addLayer() {
     const decorationsOptions = window.cakeOptions.decorations.map(
         decoration => decoration.value == "decoration_custom" ? `
         <label class="option mb-2">
-            <input type="checkbox" class="option__input layer__decor" value="${decoration.value}" id="${decoration.value}-${layers.length + 1}" data-price="${decoration.price}" data-image="${decoration.image}" data-description="${decoration.description}">
+            <input type="checkbox" class="option__input layer__decor" value="${decoration.value}" data-price="${decoration.price}">
             <div class="option__card">
                 <div class="option__name">
                     ${decoration.name} 
@@ -207,11 +206,11 @@ function addLayer() {
                     +${decoration.price} руб
                 </div>
                 <img src="${decoration.image}" class="option__img mb-2" draggable="false">
-                <input type="text" maxlength="100" class="layer__custom-decoration custom-text" placeholder="Свой вариант" name="decoration-text-${layers.length + 1}" id="${decoration.value}-text-${layers.length + 1}">
+                <input type="text" maxlength="100" class="layer__custom-decoration custom-text" placeholder="Свой вариант">
             </div>
         </label>` : `
         <label class="option mb-2">
-            <input type="checkbox" class="option__input layer__decor" value="${decoration.value}" id="${decoration.value}-${layers.length + 1}" data-price="${decoration.price}" data-image="${decoration.image}" data-description="${decoration.description}">
+            <input type="checkbox" class="option__input layer__decor" value="${decoration.value}" data-price="${decoration.price}">
             <div class="option__card">
                 <div class="option__name">
                     ${decoration.name} 
@@ -289,9 +288,9 @@ function addLayer() {
         }
         if (layers.length !== 1) {
             layerContainer.remove();
-            updateLayerNumbers();
-            calculateTotal();
         }
+        updateLayerNumbers();
+        calculateTotal();
     });
 
     layerContainer.querySelectorAll(".option__input").forEach(input => {
@@ -389,6 +388,24 @@ function updateLayerNumbers() {
     layers.forEach((layer, index) => {
         const title = layer.querySelector(".layer__title");
         title.textContent = `Ярус ${index + 1}`;
+        console.log(layer.classList);
+        layer.id = `layer_${index + 1}`;
+
+        layer.querySelectorAll('.layer__base').forEach(input =>{
+            input.name = `filling__${index + 1}`;
+        });
+
+        layer.querySelectorAll('.layer__shape').forEach(input =>{
+            input.name = `shapes-${index + 1}`;
+        });
+
+        layer.querySelectorAll('layer__ingredient').forEach(input =>{
+            input.name = `ingredients-${index + 1}`;
+        });
+        
+        layer.querySelectorAll('layer__decor').forEach(input =>{
+            input.name = `decor-${index + 1}`;
+        });
     });
 }
 
@@ -460,6 +477,7 @@ function calculateTotal() {
                 <div class="cake-info__layer-text">Начинка: ${layer.ingredients.join(", ") || "-"}</div>
                 <div class="cake-info__layer-text">Декор: ${layer.decorations.join(", ") || "-"}</div>
                 <div class="cake-info__layer-text">Вес яруса: ${layer.weight} кг</div>
+                <a class="cake-info__layer-link" href="#layer_${index + 1}">Изменить</a>
             </div>
         `;
     }).join("");
