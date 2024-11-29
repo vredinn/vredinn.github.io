@@ -972,6 +972,7 @@ h1,h2,h3{
     margin-top: 0;
     height: auto;
     transition: margin-top .25s;
+    overflow: hidden;
 }
 
 .layer__weight-wrapper{
