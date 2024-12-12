@@ -23,6 +23,9 @@
 }
 
 @media screen and (max-width: 992px){ /*md*/
+    .main__options-item{
+        padding: 0;
+    }
 
     .slider__area {
         grid-auto-columns: calc((100% / 2) - 5px);
@@ -86,19 +89,11 @@
 
 }
 
-@media screen and (orientation: landscape) and (max-height: 576px){
-    .main{
-        height: auto;
-    }
-
-    .wave_main-container{
-        position: relative;
-    }
-}
-
 @media screen and (max-width: 576px){ /*xs*/
 
     .main{
+        height: auto;
+        min-height: calc(100svh - 60px);
         padding-bottom: 30px;
     }
     .slider__descr{

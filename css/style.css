@@ -401,7 +401,7 @@ h1,h2,h3{
     background: linear-gradient(rgba(0, 0, 0, .15), rgba(0, 0, 0, .15)), url(../img/main.jpg);
     background-position: center;
     background-size: cover;
-    min-height: calc(100svh - 60px);
+    height: calc(100svh - 60px);
 }
 
 
