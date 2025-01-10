@@ -1,1 +1,17 @@
-document.addEventListener("DOMContentLoaded",(()=>{const t=document.getElementById("to-top");window.addEventListener("scroll",(()=>{window.scrollY>300?(t.style.visibility="visible",t.style.opacity=".5"):(t.style.opacity="0",t.style.visibility="hidden")}))}));
+document.addEventListener('DOMContentLoaded', () => {
+
+  // Кнопка возврата на верх страницы
+  const backToTop = document.getElementById('to-top');
+
+  // Показать скрыть кнопку "на верх"
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300){
+      backToTop.style.visibility = "visible";
+      backToTop.style.opacity = ".5";
+    } else {      
+      backToTop.style.opacity = "0";
+      backToTop.style.visibility = "hidden";
+    }
+  });
+
+});

@@ -1,1 +1,13 @@
-document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".container_main"),t=document.querySelector(".wave_main");e.style.height="calc(100% - "+2*t.clientHeight+"px)",window.addEventListener("resize",(()=>{e.style.height="calc(100% - "+2*t.clientHeight+"px)"}))}));
+document.addEventListener('DOMContentLoaded', () => {
+    // Контейнер главного раздела
+    const containerMain = document.querySelector('.container_main');
+    const waveMain = document.querySelector('.wave_main');
+    // Вычисление высоты главного раздела
+    containerMain.style.height = 'calc(100% - ' + waveMain.clientHeight*2 + 'px)';
+    // Изменение высоты главного раздела при изменении размера окна
+    window.addEventListener('resize', () =>{    
+        containerMain.style.height = 'calc(100% - ' + waveMain.clientHeight*2 + 'px)';
+    });
+})
+
+  
